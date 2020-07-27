@@ -1,0 +1,503 @@
+/* Universal styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    max-width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.background {
+    background-color: #ffd6e9;
+}
+
+main {
+    overflow: auto;
+}
+
+
+/* Header */
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background: inherit;
+    padding: 1rem;
+    border-bottom: 0.1rem solid #000;
+}
+
+nav {
+    margin: auto 0;
+}
+
+nav a{
+    text-decoration: none;
+    color: #000000;
+    margin-right: 3rem;
+    font-size: 1.15rem;
+    font-weight: 500;
+    letter-spacing: 0.25rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#logo {
+    max-height: 4rem;
+}
+
+/* Mission section */
+
+#mission {
+    background-image: url("../images/mao-lux-9.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50rem;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 1.85rem;
+    letter-spacing: 0.25rem;
+    padding-bottom: 0.5rem;
+}
+
+p {
+    padding: 0.2rem 0;
+    line-height: 1.5rem;
+}
+
+#statement {
+    position: relative;
+    top: 35%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.8;
+    padding: 2rem 0;
+}
+
+#statement h1,
+#statement p {
+    color: #ffd6e9;
+    max-width: 75%;
+    margin: auto;
+}
+
+/* Product section */
+
+h2 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+    letter-spacing: 0.25rem;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 1.15rem;
+    padding: 0.75rem 0;  
+    letter-spacing: 0.25rem;
+}
+
+#products {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 400%;
+    padding: 8rem 0;
+}
+
+#products h2,
+#products h4 {
+    max-width: 75%;
+}
+
+#gallery {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 2.5rem;
+}
+
+#gallery img {
+    width: 300px;
+    height: 200px;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+}
+
+#gallery p {
+    width: 300px;
+}
+
+.image {
+    padding: 1rem;
+}
+
+/* Team section */
+
+#team {
+    background-image: url("../images/mao-lux-10.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 40rem;
+    padding-top: 10rem;
+}
+
+#team-pic {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 3.5rem 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#team-pic img {
+    width: 40%;
+    height: auto;
+    border-radius: 2rem;
+    margin-right: 3rem;
+}
+
+#description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #ffd6e9;
+}
+
+#description h4 {
+    font-weight: 500;
+}
+
+/* Footer */
+
+#contact {
+    height: 11rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact h2 {
+    padding: 3rem 0 1rem;
+}
+
+#copyright {
+    padding-bottom: 1rem;
+}
+
+#copyright p {
+    padding-left: 2rem;
+}
+
+/* Smartphone Design */
+
+@media only screen and (max-width: 481px) {
+    nav a{
+        display: block;
+        font-size: 14px;
+    }
+
+    #logo {
+        max-height: 2.5rem;
+    }
+    
+    #mission {
+        height: 30rem;
+    }
+
+    #statement {
+        padding: 1rem 0;
+        top: 15%;
+        opacity: 0.6;
+    }
+
+    h1 {
+        font-size: 1.25rem;
+        padding-bottom: 0;
+    }
+
+    h1:last-of-type {
+        padding-bottom: 0.5rem;
+    }
+
+    p {
+        font-size: 0.75rem;
+        opacity: 1;
+        line-height: 1.25rem;
+    }
+    
+    #statement h1,
+    #statement p {
+        max-width: 90%;
+        margin: auto;
+    }
+
+    h2 {
+        font-size: 1.15rem;
+        padding: 0.75rem 0;
+    }
+
+    h4 {
+        font-size: 0.85rem;
+        line-height: 1.25rem;
+        padding: 0.25rem 0; 
+    }
+
+    #products {
+        padding: 5rem 0 2rem;
+    }
+    
+    #products h2,
+    #products h4 {
+        max-width: 90%;
+    }   
+
+    #gallery {
+        width: 100%;
+    }
+
+    #gallery img {
+        width: 80%;
+        height: auto;
+        border-radius: 2rem;
+        margin-bottom: 1rem;
+    }
+
+   .image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #team {
+        height: 30rem;
+    }
+
+    #team-pic {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 0.5rem 0;
+        position: relative;
+        top: -15%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #team-pic img {
+        min-width: 70%;
+        height: auto;
+        margin-right: 0;
+    }
+}
+
+/* Tablet Portrait Design */
+
+@media only screen and (max-width: 641px) {
+    nav a{
+        display: block;
+        font-size: 1rem;
+    }
+
+    #logo {
+        max-height: 3rem;
+    }
+
+    #mission {
+        height: 35rem;
+    }
+
+    #statement {
+        padding: 1.5rem 0;
+        top: 25%;
+        opacity: 0.6;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        padding-bottom: 0;
+    }
+
+    h1:last-of-type {
+        padding-bottom: 0.5rem;
+    }
+
+    p {
+        font-size: 0.85rem;
+        opacity: 1;
+        line-height: 1.35rem;
+    }
+    
+    #statement h1,
+    #statement p {
+        max-width: 90%;
+        margin: auto;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+        padding: 0.75rem 0;
+    }
+
+    h4 {
+        font-size: 1rem;
+        line-height: 1.35rem;
+        padding: 0.25rem 0; 
+    }
+
+    #products {
+        padding: 6rem 0 3rem;
+    }
+    
+    #products h2,
+    #products h4 {
+        max-width: 90%;
+    }   
+
+    #gallery {
+        width: 100%;
+    }
+
+    #gallery img {
+        width: 80%;
+        height: auto;
+        border-radius: 2rem;
+        margin-bottom: 1rem;
+    }
+
+   .image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #team {
+        height: 35rem;
+    }
+
+    #team-pic {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 0.75rem 0;
+        position: relative;
+        top: -10%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #team-pic img {
+        min-width: 70%;
+        height: auto;
+        margin-right: 0;
+    }
+}
+
+/* Tablet Landscape Design */
+
+@media only screen and (max-width: 961px) {
+    nav a{
+        display: block;
+    }
+
+    #mission {
+        height: 40rem;
+    }
+    
+    #statement {
+        padding: 1.5rem 0;
+        top: 35%;
+        opacity: 0.6;
+    }
+    
+    h1 {
+        font-size: 1.7rem;
+        padding-bottom: 0;
+    }
+    
+    h1:last-of-type {
+        padding-bottom: 0.5rem;
+    }
+    
+    p {
+        font-size: 1rem;
+        opacity: 1;
+        line-height: 1.35rem;
+    }
+    
+    #statement h1,
+    #statement p {
+        max-width: 90%;
+        margin: auto;
+    }
+    
+    h2 {
+        font-size: 1.35rem;
+        padding: 0.75rem 0;
+    }
+    
+    h4 {
+        font-size: 1.05rem;
+        line-height: 1.35rem;
+        padding: 0.25rem 0; 
+    }
+    
+    #products {
+        padding: 8rem 0 6rem;
+    }
+    
+    #products h2,
+    #products h4 {
+        max-width: 90%;
+    }   
+    
+    #team {
+        height: 25rem;
+        padding-top: 8rem;
+    }
+    
+    #team-pic {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 1.5rem 0;
+        margin: 0 auto;
+    }
+    
+    #team-pic img {
+        width: 40%;
+        height: auto;
+    }
+    
+    #contact {
+        height: 8rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #contact h2 {
+        padding: 1.5rem 0 0.5rem;
+    }
+
+}
+
